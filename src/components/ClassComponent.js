@@ -30,6 +30,9 @@ export default class ClassComponent extends Component {
                         +
                     </button>
                 </p>
+                <h1>
+                    {this.props.name}
+                </h1>
             </>
         )
     }

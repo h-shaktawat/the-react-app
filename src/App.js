@@ -25,18 +25,7 @@ function App() {
   return (
     <div className="App">
 
-      <header className="App-header">
-
-        <img src={logo} className="App-logo" alt="logo" />
-        
-        <Single name={userName} email="hemendra@gmail.com" address={{ city: "udaipur", state: "rajasthan" }} />
-        <Single name="Divya" email="divya@gmail.com" address={{ city: "pali", state: "rajasthan" }} />
-
-      </header>
-
-      <h1>
-        {userName}
-      </h1>
+      <ClassComponent name={userName} email="hemendra@gmail.com" />
 
       <button onClick={alertFun}>
         Click for alert from function!!!
@@ -49,7 +38,8 @@ function App() {
       {InnerComponent()}
       <InnerComponent />
 
-      <ClassComponent />
+      <Single name="HSS" email="hemendra@gmail.com" address={{ city: "udaipur", state: "rajasthan" }} />
+      <Single name="Divya" email="divya@gmail.com" address={{ city: "pali", state: "rajasthan" }} />
 
     </div>
   );
