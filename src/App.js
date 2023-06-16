@@ -14,29 +14,33 @@ function App() {
     )
   }
 
+  let name = "Hemendra Shaktawat"
+
+  function alertFun() {
+    name = "Shaktawat Hemendra"
+    alert(name);
+  }
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-
-        </a>
-        <Single />
-        <MultiOne />
-        <MultiTwo />
-        {InnerComponent()}
-        <InnerComponent />
-        <ClassComponent />
+        <button onClick={() => alert('hello!!!')}>
+          Click for Show Alert!!!
+        </button>
+        <h1>
+          {name}
+        </h1>
+        <button onClick={alertFun}>
+          Click for alert from function!!!
+        </button>
       </header>
+      <Single />
+      <MultiOne />
+      <MultiTwo />
+      {InnerComponent()}
+      <InnerComponent />
+      <ClassComponent />
     </div>
   );
 }
