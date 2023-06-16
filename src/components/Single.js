@@ -1,9 +1,12 @@
-function Single ()
-{
+function Single(props) {
     return (
-        <h1>
-            Hello from single element component!!!
-        </h1>
+        <>
+            <div>
+                <p> Name: {props.name} </p>
+                <p> Email: {props.email} </p>
+                <p> Address: {props.address.city} </p>
+            </div>
+        </>
     )
 }
 

@@ -15,39 +15,41 @@ function App() {
     )
   }
 
-  const [name, setName] = useState("Hemendra Shaktawat");
+  const [userName, setName] = useState("Hemendra Shaktawat");
 
   function alertFun() {
     setName("Shaktawat Hemendra")
-    alert(name);
+    alert(userName);
   }
 
   return (
     <div className="App">
 
       <header className="App-header">
+
         <img src={logo} className="App-logo" alt="logo" />
-        <button onClick={() => alert('hello!!!')}>
-          Click for Show Alert!!!
-        </button>
-
-        <ClassComponent />
-
-        <h1>
-          {name}
-        </h1>
-
-        <button onClick={alertFun}>
-          Click for alert from function!!!
-        </button>
+        
+        <Single name={userName} email="hemendra@gmail.com" address={{ city: "udaipur", state: "rajasthan" }} />
+        <Single name="Divya" email="divya@gmail.com" address={{ city: "pali", state: "rajasthan" }} />
 
       </header>
 
-      <Single />
+      <h1>
+        {userName}
+      </h1>
+
+      <button onClick={alertFun}>
+        Click for alert from function!!!
+      </button>
+
       <MultiOne />
+
       <MultiTwo />
+
       {InnerComponent()}
       <InnerComponent />
+
+      <ClassComponent />
 
     </div>
   );
