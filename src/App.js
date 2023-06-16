@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import Single from './components/Single';
+import { MultiOne, MultiTwo } from './components/Multi';
 
 function App() {
   return (
@@ -16,7 +18,11 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
+
         </a>
+        <Single />
+        <MultiOne />
+        <MultiTwo />
       </header>
     </div>
   );
