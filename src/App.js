@@ -3,6 +3,7 @@ import './App.css';
 import Single from './components/Single';
 import { MultiOne, MultiTwo } from './components/Multi';
 import ClassComponent from './components/ClassComponent';
+import { useState } from 'react';
 
 function App() {
 
@@ -14,10 +15,10 @@ function App() {
     )
   }
 
-  let name = "Hemendra Shaktawat"
+  const [name, setName] = useState("Hemendra Shaktawat");
 
   function alertFun() {
-    name = "Shaktawat Hemendra"
+    setName("Shaktawat Hemendra")
     alert(name);
   }
 
