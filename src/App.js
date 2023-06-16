@@ -1,10 +1,10 @@
 import './App.css';
-import { ToggleElement } from './components/ToggleElement';
+import { BasicForm } from './components/BasicForm';
 
 function App() {
   return (
     <div className="App">
-      <ToggleElement />
+      <BasicForm />
     </div>
   );
 }
