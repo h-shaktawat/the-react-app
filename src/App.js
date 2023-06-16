@@ -1,10 +1,10 @@
 import './App.css';
-import { GetInputVal } from './components/GetInputVal';
+import { ToggleElement } from './components/ToggleElement';
 
 function App() {
   return (
     <div className="App">
-      <GetInputVal />
+      <ToggleElement />
     </div>
   );
 }
