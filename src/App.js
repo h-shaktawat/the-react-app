@@ -1,5 +1,5 @@
 import './App.css';
-import { User } from './components/User';
+import ClassLCM from './components/ClassLSM';
 
 function App() {
 
@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className="App">
-      <User appFun={getMessage} />
+      <ClassLCM />
     </div>
   );
 }
