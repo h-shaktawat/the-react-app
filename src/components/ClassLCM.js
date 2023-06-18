@@ -28,6 +28,11 @@ export default class ClassLCM extends Component {
         return true; // Set false if no need to re-render component
     }
 
+    componentWillUnmount() {
+        // Run when component removed automatically called
+        console.log("this is componentWillUnmount!!!");
+    }
+
     render() {
 
         // Run each type when component render

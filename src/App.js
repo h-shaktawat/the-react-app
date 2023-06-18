@@ -1,5 +1,5 @@
 import './App.css';
-import ClassLCM from './components/ClassLSM';
+import ClassLCM from './components/ClassLCM';
 
 function App() {
 
