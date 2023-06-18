@@ -1,10 +1,15 @@
 import './App.css';
-import { Login } from './components/Login';
+import { User } from './components/User';
 
 function App() {
+
+  function getMessage() {
+    alert("Hii from App Component!!!");
+  }
+
   return (
     <div className="App">
-      <Login />
+      <User appFun={getMessage} />
     </div>
   );
 }
