@@ -1,10 +1,10 @@
 import './App.css';
-import { ConditionalRendering } from './components/ConditionalRendering';
+import { Login } from './components/Login';
 
 function App() {
   return (
     <div className="App">
-      <ConditionalRendering />
+      <Login />
     </div>
   );
 }
