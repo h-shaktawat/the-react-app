@@ -1,14 +1,14 @@
 import './App.css';
-import RefClassComponent from './components/RefClassComponent';
+import UseRefHook from './components/UseRefHook';
 
 function App() {
 
   return (
     <div className="App">
-      <h1>Ref in Class Component !!!</h1>
+      <h1>Ref Hook in Functional Component !!!</h1>
       <br />
       <br />
-      <RefClassComponent />
+      <UseRefHook />
     </div>
   );
 }
