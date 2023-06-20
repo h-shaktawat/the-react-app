@@ -1,14 +1,14 @@
 import './App.css';
-import UseMemo from './components/UseMemo';
+import RefClassComponent from './components/RefClassComponent';
 
 function App() {
 
   return (
     <div className="App">
-      <h1>useMemo Hook !!!</h1>
+      <h1>Ref in Class Component !!!</h1>
       <br />
       <br />
-      <UseMemo />
+      <RefClassComponent />
     </div>
   );
 }
