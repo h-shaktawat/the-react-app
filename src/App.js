@@ -1,18 +1,14 @@
 import './App.css';
-import TestComponent from './components/TestComponent';
+import MyPureComponent from './components/MyPureComponent';
 
 function App() {
 
-  function parentAlert(data) {
-    alert(data);
-  }
-
   return (
     <div className="App">
-      <h1>Lifting State Up !!!</h1>
+      <h1>Pure component in ReactJs !!!</h1>
       <br />
       <br />
-      <TestComponent alert={parentAlert} />
+      <MyPureComponent />
     </div>
   );
 }
