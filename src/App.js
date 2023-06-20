@@ -1,12 +1,19 @@
 import './App.css';
+import TestComponent from './components/TestComponent';
 
-import MyTable from './components/MyTable';
 function App() {
 
+  function parentAlert(data) {
+    alert(data);
+  }
+
   return (
-    <>
-      <MyTable />
-    </>
+    <div className="App">
+      <h1>Lifting State Up !!!</h1>
+      <br />
+      <br />
+      <TestComponent alert={parentAlert} />
+    </div>
   );
 }
 
