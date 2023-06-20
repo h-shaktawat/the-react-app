@@ -1,14 +1,14 @@
 import './App.css';
-import MyPureComponent from './components/MyPureComponent';
+import UseMemo from './components/UseMemo';
 
 function App() {
 
   return (
     <div className="App">
-      <h1>Pure component in ReactJs !!!</h1>
+      <h1>useMemo Hook !!!</h1>
       <br />
       <br />
-      <MyPureComponent />
+      <UseMemo />
     </div>
   );
 }
