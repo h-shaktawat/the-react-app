@@ -1,6 +1,7 @@
 import './App.css';
 import './assets/custom.css'
 import style from './assets/style.module.css'
+import { Table } from 'react-bootstrap';
 
 function App() {
 
@@ -22,35 +23,39 @@ function App() {
         <br />
         <br />
         {
-          students.map((student) =>
-            <h3>Student Name : {student}</h3>
+          students.map((student, key) =>
+            <p key={key}>Student Name : {student}</p>
           )
         }
       </h1>
 
-
       <br />
       <br />
 
-      <h1 style={{ color: "red", backgroundColor: "white" }}>
+      <div style={{ color: "red", backgroundColor: "white" }}>
         Array an Object
-        <table className='table table-bordered'>
-          <tr>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Contact</th>
-          </tr>
-          {
-            users.map((user) =>
-              <tr>
-                <td>{user.name}</td>
-                <td>{user.email}</td>
-                <td>{user.contact}</td>
-              </tr>
-            )
-          }
-        </table>
-      </h1>
+        <Table striped bordered hover>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Contact</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              users.map((user, key) =>
+                <tr key={key}>
+                  <td>{user.name}</td>
+                  <td>{user.email}</td>
+                  <td>{user.contact}</td>
+                </tr>
+              )
+            }
+          </tbody>
+          <tfoot></tfoot>
+        </Table>
+      </div>
 
 
       <br />
