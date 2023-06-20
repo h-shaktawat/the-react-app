@@ -10,9 +10,24 @@ function App() {
 
   // Array an Object
   const users = [
-    { name: 'hemendra', email: 'hemendra@gmail.com', contact: 8003836264 },
-    { name: 'divya', email: 'divya@gmail.com', contact: 9785187343 },
-    { name: 'pihu', email: 'pihu@gmail.com', contact: 1234567890 }
+    {
+      name: 'hemendra', email: 'hemendra@gmail.com', contact: 8003836264, address: [
+        { houseNo: '101', city: 'Udaipur' },
+        { houseNo: '101', city: 'Bhilwara' }
+      ]
+    },
+    {
+      name: 'divya', email: 'divya@gmail.com', contact: 9785187343, address: [
+        { houseNo: '101', city: 'Udaipur' },
+        { houseNo: '101', city: 'Bhilwara' }
+      ]
+    },
+    {
+      name: 'pihu', email: 'pihu@gmail.com', contact: 1234567890, address: [
+        { houseNo: '101', city: 'Udaipur' },
+        { houseNo: '101', city: 'Bhilwara' }
+      ]
+    }
   ]
 
   return (
@@ -40,6 +55,7 @@ function App() {
               <th>Name</th>
               <th>Email</th>
               <th>Contact</th>
+              <th>Address</th>
             </tr>
           </thead>
           <tbody>
@@ -49,6 +65,24 @@ function App() {
                   <td>{user.name}</td>
                   <td>{user.email}</td>
                   <td>{user.contact}</td>
+                  <td>
+                    <Table striped bordered hover>
+                      <tbody>
+                        {
+                          user.address.map((addresses, addressKey) =>
+                            <tr key={addressKey}>
+                              <td>
+                                {addresses.houseNo}
+                              </td>
+                              <td>
+                                {addresses.city}
+                              </td>
+                            </tr>
+                          )
+                        }
+                      </tbody>
+                    </Table>
+                  </td>
                 </tr>
               )
             }
