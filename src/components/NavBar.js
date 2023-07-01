@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function NavBar() {
     return (
         <div className="nav-bar">
-            <ul>
+            <ul className="nav-bar-ul">
                 <li>
-                    <Link to="/">Home</Link>
+                    <NavLink className="nav-bar-link" style={{ color: 'red' }} to="/">Home</NavLink>
                 </li>
                 <li>
-                    <Link to="/about">About</Link>
+                    <NavLink className="nav-bar-link" to="/about">About</NavLink>
                 </li>
                 <li>
-                    <Link to="/contact">Contact</Link>
+                    <NavLink className="nav-bar-link" to="/contact">Contact</NavLink>
                 </li>
                 <li>
-                    <Link to="/user">User</Link>
+                    <NavLink className="nav-bar-link" to="/user">User</NavLink>
                 </li>
             </ul>
         </div>
