@@ -7,6 +7,7 @@ import NavBar from './components/NavBar';
 import Page404 from './components/Page404';
 import User from './components/User';
 import UserDetails from './components/UserDetails';
+import FilterWithParams from './components/FilterWithParams';
 
 function App() {
   return (
@@ -17,10 +18,12 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/filter" element={<FilterWithParams />} />
           <Route path="/user" element={<User />} />
+          <Route path="/user/:name" element={<UserDetails />} />
+
           {/* <Route path="/*" element={<Page404 />} /> */}
           <Route path="/*" element={<Navigate to="/" />} />
-          <Route path="/user/:name" element={<UserDetails />} />
         </Routes>
       </BrowserRouter>
     </div>
