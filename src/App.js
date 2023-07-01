@@ -22,8 +22,8 @@ function App() {
           <Route path="/user" element={<User />} />
           <Route path="/user/:name" element={<UserDetails />} />
 
-          {/* <Route path="/*" element={<Page404 />} /> */}
-          <Route path="/*" element={<Navigate to="/" />} />
+          <Route path="/*" element={<Page404 />} />
+          {/* <Route path="/*" element={<Navigate to="/" />} /> */}
         </Routes>
       </BrowserRouter>
     </div>
